@@ -8,6 +8,10 @@ import (
 	"time"
 )
 
+func UserLoginController(ctx *framework.Context) error {
+	return ctx.JSON(200, "Login success.")
+}
+
 func FooControllerHandler(ctx *framework.Context) error {
 	finish := make(chan struct{}, 1)
 	panicChan := make(chan interface{}, 1)
